@@ -1,3 +1,5 @@
+package Model;
+
 public class Patient extends User {
     //Atributos
     private String birthday;
@@ -5,7 +7,7 @@ public class Patient extends User {
     private double height;
     private String blood;
 
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name,email);
         //mas instrucciones
     }
@@ -49,4 +51,5 @@ public class Patient extends User {
     public String toString() {
         return super.toString() + "\nAge: " + birthday + "\n Weight: " +getWeight()+ "\n Height"+getHeight()+"\nBlood"+blood;
     }
+
 }
